@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FormGuard – Guarding Your Forms, Securing Your Leads, Every Single Day.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="FormGuard continuously tests your website forms, sends instant alerts, and ensures you never lose a lead again. Dark-mode, AI-powered monitoring for high-intent conversions." />
+  <meta name="robots" content="index, follow" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .font-display { font-family: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-100 antialiased">
+  <div class="min-h-screen flex flex-col bg-gradient-to-b from-gray-950 via-gray-900 to-black">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-40 border-b border-gray-800/60 bg-gray-950/80 backdrop-blur-xl">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#top" class="flex items-center gap-2 group">
+          <div class="h-9 w-9 rounded-xl bg-gradient-to-tr from-[#FF5A5F] to-[#FFD166] flex items-center justify-center shadow-2xl shadow-[#FF5A5F]/40">
+            <!-- Heroicon Shield Check -->
+            <svg class="w-5 h-5 text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M12 3.75 5.25 6v6.75c0 3.364 2.316 6.382 5.625 7.125 3.309-.743 5.625-3.761 5.625-7.125V6L12 3.75z" />
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-display font-semibold tracking-tight text-lg text-white leading-none">
+              FormGuard
+            </span>
+            <span class="text-xs text-gray-400 tracking-wide uppercase">
+              WP Expert
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center gap-10 text-sm font-medium">
+          <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
+          <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+          <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300">Testimonials</a>
+          <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
+          <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About</a>
+        </div>
+
+        <!-- Desktop CTA -->
+        <div class="hidden md:flex items-center gap-3">
+          <a href="https://wpexpert.ca/formguard-never-miss-another-lead/" class="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-[#FF5A5F] to-[#FFD166] px-6 py-2.5 text-sm font-bold text-white shadow-lg shadow-[#FF5A5F]/40 hover:shadow-xl hover:brightness-110 hover:scale-105 transition-all duration-300 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-950 focus:ring-[#FF5A5F]">
+            Get FormGuard
+            <!-- Heroicon Arrow Right -->
+            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15M13.5 5.25 19.5 12l-6 6.75" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-button md:hidden inline-flex items-center justify-center rounded-lg border border-gray-700/80 bg-gray-900/80 px-3 py-2 text-gray-200 hover:text-white hover:border-gray-500 hover:bg-gray-900 transition-all duration-300 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-950 focus:ring-[#FF5A5F]" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars text-lg"></i>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu hidden md:hidden border-t border-gray-800/70 bg-gray-950/95 backdrop-blur-xl transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col gap-3 text-sm">
+          <a href="#features" class="py-2 text-gray-200 hover:text-white transition-colors duration-300">Features</a>
+          <a href="#benefits" class="py-2 text-gray-200 hover:text-white transition-colors duration-300">Benefits</a>
+          <a href="#testimonials" class="py-2 text-gray-200 hover:text-white transition-colors duration-300">Testimonials</a>
+          <a href="#faq" class="py-2 text-gray-200 hover:text-white transition-colors duration-300">FAQ</a>
+          <a href="#about" class="py-2 text-gray-200 hover:text-white transition-colors duration-300">About</a>
+          <a href="https://wpexpert.ca/formguard-never-miss-another-lead/" class="mt-2 inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-[#FF5A5F] to-[#FFD166] px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-[#FF5A5F]/40 hover:shadow-xl hover:brightness-110 hover:scale-105 transition-all duration-300 ease-out">
+            Get FormGuard
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top" class="flex-1">
+      <!-- HERO -->
+      <section class="relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+          <div class="absolute -top-40 -right-32 w-80 h-80 bg-[#FF5A5F]/20 rounded-full blur-3xl"></div>
+          <div class="absolute -bottom-40 -left-32 w-96 h-96 bg-[#FFD166]/10 rounded-full blur-3xl"></div>
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_#1A1A1A_0,_transparent_55%)] opacity-60"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+            <!-- Hero Copy -->
+            <div class="space-y-8">
+              <div class="inline-flex items-center gap-2 rounded-full border border-[#FF5A5F]/40 bg-gray-900/70 px-3 py-1.5 text-xs font-medium text-[#FFD166] shadow-md shadow-black/60">
+                <!-- Heroicon Rocket -->
+                <svg class="w-4 h-4 text-[#FF5A5F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37 9.63 8.41a4.5 4.5 0 0 1 5.66-5.66l2.12 2.12a4.5 4.5 0 0 1-1.83 7.5z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.41 15.59 4.5 19.5l3.91-3.91m0 0a4.5 4.5 0 0 0 7.5-1.83l2.12 2.12a4.5 4.5 0 0 1-5.66 5.66l-2.12-2.12a4.5 4.5 0 0 1-1.83-3.83z" />
+                </svg>
+                <span class="uppercase tracking-wide">Never miss another lead</span>
+              </div>
+
+              <div class="space-y-4">
+                <h1 class="font-display font-bold tracking-tight text-4xl sm:text-5xl lg:text-6xl text-white leading-tight">
+                  Guarding Your Forms,<br class="hidden sm:block" />
+                  Securing Your Leads,<br class="hidden sm:block" />
+                  <span class="bg-gradient-to-r from-[#FF5A5F] to-[#FFD166] bg-clip-text text-transparent">
+                    Every Single Day.
+                  </span>
+                </h1>
+                <p class="max-w-xl text-base sm:text-lg text-gray-300 leading-relaxed font-light">
+                  FormGuard is your always-on watchdog for WordPress forms. We automatically test, monitor, and verify every submission so broken forms, lost leads, and silent failures never drain your revenue again.
+                </p>
+              </div>
+
+              <div class="space-y-4">
+                <p class="uppercase text-xs tracking-[0.2em] text-gray-400">
+                  NEVER MISS A LEAD AND PROTECT EVERY FORM SUBMISSIONS
+                </p>
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                  <a href="https://wpexpert.ca/formguard-never-miss-another-lead/" class="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-[#FF5A5F] to-[#FFD166] px-8 py-4 text-base font-bold text-white shadow-2xl shadow-[#FF5A5F]/50 hover:shadow-xl hover:brightness-110 hover:scale-105 transition-all duration-300 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-950 focus:ring-[#FF5A5F]">
+                    Start Protecting Leads
+                    <svg class="w-5 h-5 ml-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15M13.5 5.25 19.5 12l-6 6.75" />
+                    </svg>
+                  </a>
+                  <div class="flex items-center gap-3 text-sm text-gray-400">
+                    <!-- Heroicon Shield -->
+                    <svg class="w-5 h-5 text-[#FFD166]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 3.75 5.25 6v6.75c0 3.364 2.316 6.382 5.625 7.125 3.309-.743 5.625-3.761 5.625-7.125V6L12 3.75z" />
+                    </svg>
+                    <span class="font-light">
+                      24/7 AI-assisted monitoring for mission-critical forms
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-3 gap-4 max-w-xl">
+                <div class="border border-gray-800/80 bg-gray-900/50 rounded-xl px-4 py-3 flex flex-col gap-1 shadow-md shadow-black/60">
+                  <span class="text-xs text-gray-400 uppercase tracking-wide">Detected issues</span>
+                  <span class="font-display text-lg font-semibold text-white">98+</span>
+                  <span class="text-[11px] text-gray-500">Across high-traffic WP sites last quarter</span>
+                </div>
+                <div class="border border-gray-800/80 bg-gray-900/50 rounded-xl px-4 py-3 flex flex-col gap-1 shadow-md shadow-black/60">
+                  <span class="text-xs text-gray-400 uppercase tracking-wide">Leads rescued</span>
+                  <span class="font-display text-lg font-semibold text-white">5,300+</span>
+                  <span class="text-[11px] text-gray-500">That would have silently failed</span>
+                </div>
+                <div class="border border-gray-800/80 bg-gray-900/50 rounded-xl px-4 py-3 flex flex-col gap-1 shadow-md shadow-black/60">
+                  <span class="text-xs text-gray-400 uppercase tracking-wide">Avg. response</span>
+                  <span class="font-display text-lg font-semibold text-white">&lt; 60s</span>
+                  <span class="text-[11px] text-gray-500">Instant alert from first failure</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hero Visual -->
+            <div class="relative">
+              <div class="absolute -top-8 -right-8 w-40 h-40 bg-gradient-to-br from-[#FF5A5F]/40 via-transparent to-transparent rounded-full blur-3xl"></div>
+              <div class="absolute -bottom-10 -left-6 w-36 h-36 bg-gradient-to-tr from-[#FFD166]/25 via-transparent to-transparent rounded-full blur-3xl"></div>
+
+              <div class="relative border border-gray-800/80 rounded-3xl bg-gradient-to-br from-gray-900 via-black to-gray-900 p-6 sm:p-8 shadow-2xl shadow-black/70">
+                <div class="flex items-center justify-between mb-6">
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
+                    <span class="w-3 h-3 rounded-full bg-yellow-400/80"></span>
+                    <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
+                  </div>
+                  <span class="text-xs text-gray-500 font-medium tracking-wide uppercase">
+                    Live Form Status
+                  </span>
+                </div>
+
+                <div class="space-y-4">
+                  <!-- Status Row 1 -->
+                  <div class="flex items-center justify-between gap-4 border border-gray-800/90 bg-gray-900/70 rounded-2xl px-4 py-3 hover:border-[#FF5A5F]/70 transition-all duration-300">
+                    <div class="flex items-center gap-3">
+                      <div class="h-9 w-9 rounded-xl bg-gray-800 flex items-center justify-center">
+                        <!-- Heroicon Cursor Arrow Rays -->
+                        <svg class="w-5 h-5 text-[#FFD166]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m9 12 2.25 6L12 13.5l3.75-1.5L9 12z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25M6.364 5.636l1.591 1.591M3 12h2.25m1.114 5.364 1.591-1.591M12 18.75V21m5.364-3.636-1.591-1.591M18.75 12H21m-3.636-6.364-1.591 1.591" />
+                        </svg>
+                      </div>
+                      <div>
+                        <p class="text-sm font-medium text-white">Primary Lead Form</p>
+                        <p class="text-xs text-gray-400">/contact | Gravity Forms</p>
+                      </div>
+                    </div>
+                    <div class="flex flex-col items-end gap-1">
+                      <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-2 py-0.5 text-[11px] font-medium text-emerald-300 border border-emerald-500/40">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Healthy
+                      </span>
+                      <span class="text-[11px] text-gray-500">Last tested 2 min ago</span>
+                    </div>
+                  </div>
+
+                  <!-- Status Row 2 -->
+                  <div class="flex items-center justify-between gap-4 border border-gray-800/90 bg-gray-900/70 rounded-2xl px-4 py-3 hover:border-[#FF5A5F]/70 transition-all duration-300">
+                    <div class="flex items-center gap-3">
+                      <div class="h-9 w-9 rounded-xl bg-gray-800 flex items-center justify-center">
+                        <!-- Heroicon Envelope -->
+                        <svg class="w-5 h-5 text-[#FF5A5F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 7.5 12 13.5 2.25 7.5M4.5 18.75h15A2.25 2.25 0 0 0 21.75 16.5v-9A2.25 2.25 0 0 0 19.5 5.25h-15A2.25 2.25 0 0 0 2.25 7.5v9A2.25 2.25 0 0 0 4.5 18.75z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <p class="text-sm font-medium text-white">Quote Request</p>
+                        <p class="text-xs text-gray-400">/get-a-quote | WPForms</p>
+                      </div>
+                    </div>
+                    <div class="flex flex-col items-end gap-1">
+                      <span class="inline-flex items-center gap-1.5 rounded-full bg-amber-500/10 px-2 py-0.5 text-[11px] font-medium text-amber-300 border border-amber-500/40">
+                        <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+                        Monitoring
+                      </span>
+                      <span class="text-[11px] text-gray-500">5 test submissions today</span>
+                    </div>
+                  </div>
+
+                  <!-- Alert Row -->
+                  <div class="border border-[#FF5A5F]/50 bg-[#FF5A5F]/5 rounded-2xl px-4 py-3 flex items-start gap-3 shadow-lg shadow-[#FF5A5F]/30">
+                    <!-- Heroicon Exclamation Triangle -->
+                    <svg class="w-5 h-5 mt-0.5 text-[#FF5A5F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75M12 15.75h.007M10.637 4.223 3.91 16.5A1.5 1.5 0 0 0 5.21 18.75h13.58A1.5 1.5 0 0 0 20.09 16.5l-6.727-12.277a1.5 1.5 0 0 0-2.726 0z" />
+                    </svg>
+                    <div class="space-y-1">
+                      <p class="text-sm font-medium text-white">
+                        Instant alert triggered
+                      </p>
+                      <p class="text-xs text-gray-300">
+                        “Careers Application” form stopped delivering emails. FormGuard tested, detected the failure, and sent alerts to your team before any candidate submissions were lost.
+                      </p>
+                      <p class="text-[11px] text-gray-400">
+                        Alerted via email &amp; Slack · 42 seconds after first failure
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-6 grid grid-cols-2 gap-3 text-[11px] text-gray-400">
+                  <div class="flex items-center gap-2">
+                    <!-- Heroicon Check Circle -->
+                    <svg class="w-4 h-4 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 12.75 11.25 14.25 14.25 9.75M21 12A9 9 0 1 1 3 12a9 9 0 0 1 18 0z" />
+                    </svg>
+                    Monitors all key WP forms daily
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <!-- Heroicon Bell Alert -->
+                    <svg class="w-4 h-4 text-[#FFD166]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5.25M3.75 17H9m8.25-5.25V11.25A5.25 5.25 0 0 0 6 11.25v.5A2.25 2.25 0 0 1 4.5 14M19.5 14A2.25 2.25 0 0 1 18 11.75" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 20.25a1.5 1.5 0 0 0 3 0" />
+                    </svg>
+                    No plugins to configure or maintain
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section id="features" class="py-16 md:py-24 border-t border-gray-900/80 bg-gradient-to-b from-black/40 via-gray-950 to-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-12">
+            <div class="space-y-3">
+              <h2 class="font-display font-bold tracking-tight text-3xl sm:text-4xl text-white">
+                FormGuard’s Core Features,<br class="hidden sm:block" />
+                Engineered for High-Stakes Funnels
+              </h2>
+              <p class="max-w-2xl text-sm sm:text-base text-gray-300 leading-relaxed font-light">
+                Built for agencies, SaaS, and performance-focused businesses, FormGuard continuously validates your forms, notifies you instantly when something breaks, and does it all without you touching a single configuration screen.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-3 text-xs text-gray-400 uppercase tracking-[0.25em]">
+              <span class="px-3 py-1 rounded-full border border-gray-700/70 bg-gray-900/60">
+                Bold / Creative
+              </span>
+              <span class="px-3 py-1 rounded-full border border-gray-700/70 bg-gray-900/60">
+                Tech-Forward
+              </span>
+              <span class="px-3 py-1 rounded-full border border-gray-700/70 bg-gray-900/60">
+                Dark Mode Native
+              </span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+            <!-- Feature 1: Instant Alerts -->
+            <article class="group border border-gray-800/80 bg-gray-900/60 rounded-2xl p-6 flex flex-col gap-4 shadow-md shadow-black/60 hover:shadow-xl hover:shadow-black/80 hover:border-[#FF5A5F]/80 hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 ease-out">
+              <div class="flex items-center justify-between">
+                <div class="h-11 w-11 rounded-xl bg-gradient-to-br from-[#FF5A5F]/80 to-[#FFD166]/80 flex items-center justify-center shadow-lg shadow-[#FF5A5F]/40">
+                  <!-- Heroicon Bell -->
+                  <svg class="w-6 h-6 text-gray-950" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 18.75a2.25 2.25 0 0 1-4.5 0M4.5 9.75A7.5 7.5 0 0 1 12 2.25a7.5 7.5 0 0 1 7.5 7.5v2.17c0 .51.107 1.016.316 1.48l.998 2.245a1.35 1.35 0 0 1-1.23 1.88H4.416a1.35 1.35 0 0 1-1.23-1.88l.998-2.245a3.75 3.75 0 0 0 .316-1.48v-2.17z"/>
+                  </svg>
+                </div>
+                <span class="text-[11px] text-emerald-300 bg-emerald-500/10 border border-emerald-500/50 px-2 py-0.5 rounded-full uppercase tracking-wide">
+                  Instant Alerts
+                </span>
+              </div>
+              <div class="space-y-2">
+                <h3 class="font-display text-xl font-semibold text-white tracking-tight">
+                  Instant Failure Alerts, Before Your Revenue Leaks
+                </h3>
+                <p class="text-sm text-gray-300 font-light leading-relaxed">
+                  FormGuard sends real-time alerts the moment a form stops delivering or a submission fails. No more waiting for clients to complain or for your sales team to notice a “quiet week.” You know within seconds, not days.
+                </p>
+              </div>
+              <ul class="mt-2 space-y-2 text-sm text-gray-300 font-light">
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-emerald-400 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 12.75 11.25 14.25 14.25 9.75M21 12A9 9 0 1 1 3 12a9 9 0 0 1 18 0z" />
+                  </svg>
+                  <span>Configure once and receive alerts for any delivery failures or form errors automatically.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-emerald-400 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 12.75 11.25 14.25 14.25 9.75M21 12A9 9 0 1 1 3 12a9 9 0 0 1 18 0z" />
+                  </svg>
+                  <span>Alerts include impacted form, page URL, and failure details so you can fix issues in minutes.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-emerald-400 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 12.75 11.25 14.25 14.25 9.75M21 12A9 9 0 1 1 3 12a9 9 0 0 1 18 0z" />
+                  </svg>
+                  <span>Route alerts to your preferred inbox or team channel so the right people act immediately.</span>
+                </li>
+              </ul>
+            </article>
+
+            <!-- Feature 2: Proactive Daily Testing -->
+            <article class="group border border-gray-800/80 bg-gray-900/60 rounded-2xl p-6 flex flex-col gap-4 shadow-md shadow-black/60 hover:shadow-xl hover:shadow-black/80 hover:border-[#FF5A5F]/80 hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 ease-out">
+              <div class="flex items-center justify-between">
+                <div class="h-11 w-11 rounded-xl bg-gradient-to-br from-[#FFD166]/90 to-[#FF5A5F]/80 flex items-center justify-center shadow-lg shadow-[#FFD166]/40">
+                  <!-- Heroicon Clock -->
+                  <svg class="w-6 h-6 text-gray-950" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l3 3m5.25-3A8.25 8.25 0 1 1 3.75 12a8.25 8.25 0 0 1 16.5 0z" />
+                  </svg>
+                </div>
+                <span class="text-[11px] text-sky-300 bg-sky-500/10 border border-sky-500/50 px-2 py-0.5 rounded-full uppercase tracking-wide">
+                  Daily Testing
+                </span>
+              </div>
+              <div class="space-y-2">
+                <h3 class="font-display text-xl font-semibold text-white tracking-tight">
+                  Proactive Daily Testing, So You Sleep at Night
+                </h3>
+                <p class="text-sm text-gray-300 font-light leading-relaxed">
+                  FormGuard doesn’t wait for real users to hit your forms. We proactively submit safe test entries every day, validating that every critical funnel continues to work after updates, plugin changes, or server tweaks.
+                </p>
+              </div>
+              <ul class="mt-2 space-y-2 text-sm text-gray-300 font-light">
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-emerald-400 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 12.75 11.25 14.25 14.25 9.75M21 12A9 9 0 1 1 3 12a9 9 0 0 1 18 0z" />
+                  </svg>
+                  <span>Smart, non-invasive test submissions verify front-end fields and back-end email delivery.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-emerald-400 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 12.75 11.25 14.25 14.25 9.75M21 12A9 9 0 1 1 3 12a9 9 0 0 1 18 0z" />
+                  </svg>
+                  <span>Identify issues caused by plugin updates, SMTP misconfigurations, and hosting changes.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-emerald-400 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 12.75 11.25 14.25 14.25 9.75M21 12A9 9 0 1 1 3 12a9 9 0 0 1 18 0z" />
+                  </svg>
+                  <span>Receive clean daily health reports that prove everything is working—or show exactly what broke.</span>
+                </li>
+              </ul>
+            </article>
+
+            <!-- Feature 3: Zero Configuration -->
+            <article class="group border border-gray-800/80 bg-gray-900/60 rounded-2xl p-6 flex flex-col gap-4 shadow-md shadow-black/60 hover:shadow-xl hover:shadow-black/80 hover:border-[#FF5A5F]/80 hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 ease-out">
+              <div class="flex items-center justify-between">
+                <div class="h-11 w-11 rounded-xl bg-gradient-to-br from-gray-200 to-gray-500 flex items-center justify-center shadow-lg shadow-gray-500/40">
+                  <!-- Heroicon Sparkles -->
+                  <svg class="w-6 h-6 text-gray-950" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l1.5-4.5L12 9l4.5 1.5L12 12l-1.5 4.5L9 12 4.5 10.5 9 9zM16.5 15l.75-2.25L18 15l2.25.75L18 16.5l-.75 2.25L16.5 16.5 14.25 15.75 16.5 15z" />
+                  </svg>
+                </div>
+                <span class="text-[11px] text-fuchsia-300 bg-fuchsia-500/10 border border-fuchsia-500/50 px-2 py-0.5 rounded-full uppercase tracking-wide">
+                  Zero Configuration
+                </span>
+              </div>
+              <div class="space-y-2">
+                <h3 class="font-display text-xl font-semibold text-white tracking-tight">
+                 Zero Configuration. No New Plugin Headaches.
+                </h3>
+                <p class="text-sm text-gray-300 font-light leading-relaxed">
+                  FormGuard is fully managed. You don’t log into dashboards, learn new settings, or maintain yet another plugin. We set up monitoring for your critical forms and keep them covered as your site evolves.
+                </p>
+              </div>
+              <ul class="mt-2 space-y-2 text-sm text-gray-300 font-light">
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-emerald-400 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 12.75 11.25 14.25 14.25 9.75M21 12A9 9 0 1 1 3 12a9 9 0 0 1 18 0z" />
+                  </svg>
+                  <span>We connect directly with your existing WordPress stack—no bloated monitoring plugins.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-emerald-400 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 12.75 11.25 14.25 14.25 9.75M21 12A9 9 0 1 1 3 12a9 9 0 0 1 18 0z" />
+                  </svg>
+                  <span>Optimized for popular tools like Gravity Forms, WPForms, Ninja Forms, Contact Form 7, and more.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-emerald-400 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 12.75 11.25 14.25 14.25 9.75M21 12A9 9 0 1 1 3 12a9 9 0 0 1 18 0z" />
+                  </svg>
+                  <span>We handle setup, tuning, and continuous optimization so your team stays focused on growth.</span>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- BENEFITS -->
+      <section id="benefits" class="py-16 md:py-24 border-t border-gray-900/80 bg-gray-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 items-start">
+            <div class="lg:col-span-1 space-y-4">
+              <h2 class="font-display font-bold tracking-tight text-3xl sm:text-4xl text-white">
+                From Silent Form Failures<br class="hidden sm:block" />
+                to Predictable Revenue Flow
+              </h2>
+              <p class="text-sm sm:text-base text-gray-300 leading-relaxed font-light">
+                Every broken form is a direct hit to your marketing ROI. FormGuard turns that hidden risk into a measurable, protected asset—so your ad spend, SEO, and campaigns generate every lead they should.
+              </p>
+              <div class="mt-4 border border-[#FF5A5F]/40 bg-[#FF5A5F]/10 rounded-2xl px-4 py-3 text-xs text-[#FFD166] flex items-start gap-3 shadow-md shadow-[#FF5A5F]/30">
+                <!-- Heroicon Shield Check -->
+                <svg class="w-5 h-5 mt-0.5 text-[#FFD166]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M12 3.75 5.25 6v6.75c0 3.364 2.316 6.382 5.625 7.125 3.309-.743 5.625-3.761 5.625-7.125V6L12 3.75z" />
+                </svg>
+                <p class="font-light">
+                  Protect every high-intent touchpoint—from contact forms to quote requests, booking flows, and onboarding funnels—with one managed service.
+                </p>
+              </div>
+            </div>
+
+            <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-6">
+              <!-- Benefit 1: Stop losing money -->
+              <div class="border border-gray-800/80 bg-gray-900/80 rounded-2xl p-6 flex flex-col gap-3 shadow-md shadow-black/60 hover:border-[#FF5A5F]/70 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 ease-out">
+                <div class="flex items-center gap-3">
+                  <div class="h-9 w-9 rounded-xl bg-emerald-500/15 border border-emerald-400/60 flex items-center justify-center">
+                    <!-- Heroicon Banknotes -->
+                    <svg class="w-5 h-5 text-emerald-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75h19.5v-9H2.25v9z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 9.75V7.5h13.5v2.25m-10.5 6a3 3 0 1 0 6 0 3 3 0 0 0-6 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="font-display text-lg font-semibold text-white tracking-tight">
+                      Stop Losing Money on Broken Forms
+                    </h3>
+                    <p class="text-xs text-emerald-300 uppercase tracking-wide">
+                      Recover hidden revenue leaks
+                    </p>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-300 font-light leading-relaxed">
+                  A single broken form on a high-traffic page can quietly burn thousands in ad spend and lost deals every month. FormGuard catches those failures fast, so your funnel remains fully monetized.
+                </p>
+                <ul class="mt-1 space-y-1.5 text-xs text-gray-400 font-light">
+                  <li class="flex items-start gap-2">
+                    <span class="mt-0.5 w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                    <span>Protect campaign pages where each lead is worth hundreds or thousands of dollars.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="mt-0.5 w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                    <span>Stop discovering failures weeks later in your CRM reports.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Benefit 2: Save time & resources -->
+              <div class="border border-gray-800/80 bg-gray-900/80 rounded-2xl p-6 flex flex-col gap-3 shadow-md shadow-black/60 hover:border-[#FF5A5F]/70 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 ease-out">
+                <div class="flex items-center gap-3">
+                  <div class="h-9 w-9 rounded-xl bg-sky-500/15 border border-sky-400/60 flex items-center justify-center">
+                    <!-- Heroicon Bolt -->
+                    <svg class="w-5 h-5 text-sky-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 14.25 12 3.75l1.5 6h4.5L10.5 20.25l-1.5-6h-4.5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="font-display text-lg font-semibold text-white tracking-tight">
+                      Save Time &amp; Dev Resources
+                    </h3>
+                    <p class="text-xs text-sky-300 uppercase tracking-wide">
+                      Automate manual checks
+                    </p>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-300 font-light leading-relaxed">
+                  Your team should not be manually filling out forms every week just to “make sure they work.” FormGuard automates testing across your entire site, freeing up developer and marketing time for higher-leverage work.
+                </p>
+                <ul class="mt-1 space-y-1.5 text-xs text-gray-400 font-light">
+                  <li class="flex items-start gap-2">
+                    <span class="mt-0.5 w-1.5 h-1.5 rounded-full bg-sky-400"></span>
+                    <span>Eliminate recurring checklists and QA tasks around form submissions.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="mt-0.5 w-1.5 h-1.5 rounded-full bg-sky-400"></span>
+                    <span>Reduce support tickets from clients wondering where their leads went.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Benefit 3: Gain peace of mind -->
+              <div class="border border-gray-800/80 bg-gray-900/80 rounded-2xl p-6 flex flex-col gap-3 shadow-md shadow-black/60 hover:border-[#FF5A5F]/70 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 ease-out">
+                <div class="flex items-center gap-3">
+                  <div class="h-9 w-9 rounded-xl bg-purple-500/15 border border-purple-400/60 flex items-center justify-center">
+                    <!-- Heroicon Moon -->
+                    <svg class="w-5 h-5 text-purple-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21 12.75A9.003 9.003 0 0 1 12.75 3 7.5 7.5 0 1 0 21 12.75z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="font-display text-lg font-semibold text-white tracking-tight">
+                      Gain Peace of Mind 24/7
+                    </h3>
+                    <p class="text-xs text-purple-300 uppercase tracking-wide">
+                      Sleep while we watch your forms
+                    </p>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-300 font-light leading-relaxed">
+                  With FormGuard continuously testing your forms in the background, you can finally stop wondering if updates, new plugins, or server changes quietly broke something crucial.
+                </p>
+                <ul class="mt-1 space-y-1.5 text-xs text-gray-400 font-light">
+                  <li class="flex items-start gap-2">
+                    <span class="mt-0.5 w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+                    <span>Know your most important contact points are verified every single day.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="mt-0.5 w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+                    <span>Get confident that if something breaks, you’ll know immediately—before revenue is lost.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inline CTA -->
+          <div class="mt-12 flex flex-col sm:flex-row items-center justify-between gap-5 border border-gray-800/80 bg-gray-900/80 rounded-2xl px-6 py-5 shadow-md shadow-black/60">
+            <div class="flex items-center gap-4">
+              <div class="h-10 w-10 rounded-xl bg-gradient-to-br from-[#FF5A5F] to-[#FFD166] flex items-center justify-center shadow-lg shadow-[#FF5A5F]/50">
+                <!-- Heroicon Sparkles -->
+                <svg class="w-5 h-5 text-gray-950" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l1.5-4.5L12 9l4.5 1.5L12 12l-1.5 4.5L9 12 4.5 10.5 9 9zM16.5 15l.75-2.25L18 15l2.25.75L18 16.5l-.75 2.25L16.5 16.5 14.25 15.75 16.5 15z" />
+                </svg>
+              </div>
+              <div>
+                <p class="text-sm sm:text-base text-white font-medium">
+                  Ready to stop guessing if your forms work and start knowing?
+                </p>
+                <p class="text-xs text-gray-400 font-light">
+                  Activate FormGuard and have every mission-critical form tested and monitored within days.
+                </p>
+              </div>
+            </div>
+            <a href="https://wpexpert.ca/formguard-never-miss-another-lead/" class="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-[#FF5A5F] to-[#FFD166] px-6 py-3 text-sm font-bold text-white shadow-lg shadow-[#FF5A5F]/40 hover:shadow-xl hover:brightness-110 hover:scale-105 transition-all duration-300 ease-out">
+              Secure My Forms
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15M13.5 5.25 19.5 12l-6 6.75" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA STRIP WITH IMAGE BACKGROUND -->
+      <section class="relative py-16 md:py-24">
+        <div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center;"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[rgba(26,26,26,0.88)] via-[rgba(26,26,26,0.8)] to-[rgba(26,26,26,0.75)]"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+            <div class="md:col-span-2 space-y-4">
+              <h2 class="font-display font-bold tracking-tight text-3xl sm:text-4xl text-white">
+                Your Forms Are Either Protected or Costing You Money.
+              </h2>
+              <p class="text-sm sm:text-base text-gray-200 font-light max-w-2xl">
+                Ads, SEO, email, and partnerships all drive traffic to your site. If even one key form fails silently, your growth engine is leaking. FormGuard closes that gap by continuously validating every mission-critical form behind the scenes.
+              </p>
+              <div class="flex flex-wrap gap-4 text-xs text-gray-200">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#FFD166]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 12.75 11.25 14.25 14.25 9.75" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" />
+                  </svg>
+                  Daily, automated form tests included
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#FFD166]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15M13.5 5.25 19.5 12l-6 6.75" />
+                  </svg>
+                  Instant alerts when anything fails
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#FFD166]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l3 3" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12.75A9.003 9.003 0 0 1 12.75 3 7.5 7.5 0 1 0 21 12.75z" />
+                  </svg>
+                  Managed service—no configuration
+                </div>
+              </div>
+            </div>
+            <div class="md:col-span-1 flex flex-col items-start md:items-end gap-4">
+              <a href="https://wpexpert.ca/formguard-never-miss-another-lead/" class="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-[#FF5A5F] to-[#FFD166] px-8 py-4 text-base font-bold text-white shadow-2xl shadow-black/60 hover:shadow-xl hover:brightness-110 hover:scale-105 transition-all duration-300 ease-out">
+                Get Started with FormGuard
+                <svg class="w-5 h-5 ml-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15M13.5 5.25 19.5 12l-6 6.75" />
+                </svg>
+              </a>
+              <p class="text-xs text-gray-300 max-w-xs md:text-right font-light">
+                We’ll audit your existing forms, configure monitoring, and start testing daily—so you can focus on driving traffic, not worrying if it converts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section id="testimonials" class="py-16 md:py-24 border-t border-gray-900/80 bg-gray-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+            <div class="space-y-3">
+              <h2 class="font-display font-bold tracking-tight text-3xl sm:text-4xl text-white">
+                Trusted by Teams Who Can’t Afford Lost Leads
+              </h2>
+              <p class="max-w-2xl text-sm sm:text-base text-gray-300 font-light leading-relaxed">
+                Agencies, SaaS companies, and fast-moving marketing teams rely on FormGuard to safeguard the forms that power their funnels. Here’s what they say after seeing what was slipping through the cracks.
+              </p>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-gray-400">
+              <!-- Heroicon Star -->
+              <svg class="w-4 h-4 text-[#FFD166]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M11.48 3.499a.75.75 0 0 1 1.04 0l2.715 2.716 3.856.561a.75.75 0 0 1 .416 1.279l-2.786 2.717.658 3.836a.75.75 0 0 1-1.088.791L12 14.347l-3.48 1.825a.75.75 0 0 1-1.088-.79l.658-3.837-2.786-2.717a.75.75 0 0 1 .416-1.28l3.856-.56 2.715-2.717z" />
+              </svg>
+              <span class="font-medium text-gray-200">5.0</span>
+              <span>Average rating from customers</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Testimonial 1 -->
+            <article class="border border-gray-800/80 bg-gray-900/80 rounded-2xl p-6 flex flex-col gap-4 shadow-md shadow-black/60 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 ease-out">
+              <div class="flex items-center justify-between gap-3">
+                <div>
+                  <p class="font-display text-sm font-semibold text-white">Emily Carter</p>
+                  <p class="text-xs text-gray-400">Founder, NovaGrowth Agency</p>
+                </div>
+                <div class="flex items-center gap-0.5 text-[#FFD166] text-xs">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <p class="text-sm text-gray-300 font-light leading-relaxed">
+                We discovered that our main lead-gen form had been broken for almost five days after a plugin update. FormGuard would have caught that within an hour. Since installing it, we’ve had two delivery issues flagged before our clients even knew something was wrong.
+              </p>
+              <p class="text-xs text-gray-400 font-light">
+                The instant alerts and daily testing let our team focus on campaigns instead of babysitting forms.
+              </p>
+            </article>
+
+            <!-- Testimonial 2 -->
+            <article class="border border-gray-800/80 bg-gray-900/80 rounded-2xl p-6 flex flex-col gap-4 shadow-md shadow-black/60 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 ease-out">
+              <div class="flex items-center justify-between gap-3">
+                <div>
+                  <p class="font-display text-sm font-semibold text-white">Michael Chen</p>
+                  <p class="text-xs text-gray-400">Head of Marketing, FlowStack SaaS</p>
+                </div>
+                <div class="flex items-center gap-0.5 text-[#FFD166] text-xs">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <p class="text-sm text-gray-300 font-light leading-relaxed">
+                We drive a lot of paid traffic to our demo request page, so even one day of broken forms is expensive. FormGuard’s proactive daily testing has already flagged an SMTP misconfiguration and a bad reCAPTCHA update before they impacted our numbers.
+              </p>
+              <p class="text-xs text-gray-400 font-light">
+                It effectively pays for itself every month in recovered leads.
+              </p>
+            </article>
+
+            <!-- Testimonial 3 -->
+            <article class="border border-gray-800/80 bg-gray-900/80 rounded-2xl p-6 flex flex-col gap-4 shadow-md shadow-black/60 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 ease-out">
+              <div class="flex items-center justify-between gap-3">
+                <div>
+                  <p class="font-display text-sm font-semibold text-white">Sofia Martínez</p>
+                  <p class="text-xs text-gray-400">Operations Manager, BrightPath Clinics</p>
+                </div>
+                <div class="flex items-center gap-0.5 text-[#FFD166] text-xs">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <p class="text-sm text-gray-300 font-light leading-relaxed">
+                Our appointment request forms are mission-critical. Before FormGuard, our staff manually tested them once a week. Now everything is monitored automatically, and we get clear alerts if something breaks.
+              </p>
+              <p class="text-xs text-gray-400 font-light">
+                FormGuard has probably saved us dozens of potential new patients already.
+              </p>
+            </article>
+
+            <!-- Testimonial 4 -->
+            <article class="border border-gray-800/80 bg-gray-900/80 rounded-2xl p-6 flex flex-col gap-4 shadow-md shadow-black/60 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 ease-out">
+              <div class="flex items-center justify-between gap-3">
+                <div>
+                  <p class="font-display text-sm font-semibold text-white">Liam O’Neill</p>
+                  <p class="text-xs text-gray-400">Lead Developer, PixelForge Studio</p>
+                </div>
+                <div class="flex items-center gap-0.5 text-[#FFD166] text-xs">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <p class="text-sm text-gray-300 font-light leading-relaxed">
+                As a WordPress agency, we manage dozens of client forms across different stacks. FormGuard acts like an extra team member watching all of them. The fact that it’s zero configuration on our side is huge—we just get clear, actionable alerts when something needs our attention.
+              </p>
+              <p class="text-xs text-gray-400 font-light">
+                It’s become a standard part of our care plans for high-value clients.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="py-16 md:py-24 border-t border-gray-900/80 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-16 items-start mb-10">
+            <div class="space-y-4">
+              <h2 class="font-display font-bold tracking-tight text-3xl sm:text-4xl text-white">
+                Frequently Asked Questions
+              </h2>
+              <p class="text-sm sm:text-base text-gray-300 font-light leading-relaxed">
+                Still wondering how FormGuard fits into your stack? Here are the answers to the most common questions we hear from agencies, founders, and operations teams.
+              </p>
+              <div class="flex items-center gap-3 text-xs text-gray-400">
+                <!-- Heroicon Information Circle -->
+                <svg class="w-4 h-4 text-[#FF5A5F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 9h.008v.008H11.25V9zm.75 3v3.75m9-3.75A9 9 0 1 1 3 12a9 9 0 0 1 18 0z" />
+                </svg>
+                <span>
+                  Need something more specific? Reach us anytime at
+                  <span class="text-gray-200">contact@wpexpert.ca</span>.
+                </span>
+              </div>
+            </div>
+
+            <div class="lg:col-span-2 space-y-4">
+              <!-- FAQ Item 1 -->
+              <div class="faq-item border border-gray-800/80 bg-gray-950/80 rounded-2xl overflow-hidden">
+                <button class="faq-question w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-900/80 cursor-pointer transition-all duration-300">
+                  <span class="text-sm sm:text-base font-medium text-white">
+                    How does FormGuard actually monitor my WordPress forms?
+                  </span>
+                  <span class="faq-icon ml-4 flex-shrink-0 text-gray-400 transition-transform duration-300">
+                    <!-- Heroicon Chevron Down -->
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25 12 15.75 4.5 8.25" />
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer px-5 pb-4 pt-0 hidden">
+                  <p class="text-sm text-gray-300 font-light leading-relaxed pt-1">
+                    We start by identifying the forms that are critical to your business—contact, quote, booking, demos, lead magnets, and more. FormGuard then runs scheduled test submissions that mimic real users, checking not only that the form can be submitted, but also that confirmation emails and notifications are delivered correctly. If a problem is detected at any point in that chain, we trigger an instant alert with detailed context so your team can fix the issue quickly.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div class="faq-item border border-gray-800/80 bg-gray-950/80 rounded-2xl overflow-hidden">
+                <button class="faq-question w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-900/80 cursor-pointer transition-all duration-300">
+                  <span class="text-sm sm:text-base font-medium text-white">
+                    Will FormGuard slow down my site or interfere with real visitors?
+                  </span>
+                  <span class="faq-icon ml-4 flex-shrink-0 text-gray-400 transition-transform duration-300">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25 12 15.75 4.5 8.25" />
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer px-5 pb-4 pt-0 hidden">
+                  <p class="text-sm text-gray-300 font-light leading-relaxed pt-1">
+                    No. FormGuard runs lightweight, scheduled tests that behave like a single user filling out the form. These checks are intentionally low-frequency and optimized to avoid impacting performance or analytics. We do not inject heavy scripts or permanently add bloat to your pages. Most clients never see any measurable change in site speed or server load—instead, they simply gain visibility and protection.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div class="faq-item border border-gray-800/80 bg-gray-950/80 rounded-2xl overflow-hidden">
+                <button class="faq-question w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-900/80 cursor-pointer transition-all duration-300">
+                  <span class="text-sm sm:text-base font-medium text-white">
+                    Do I need to install a plugin or manage another dashboard?
+                  </span>
+                  <span class="faq-icon ml-4 flex-shrink-0 text-gray-400 transition-transform duration-300">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25 12 15.75 4.5 8.25" />
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer px-5 pb-4 pt-0 hidden">
+                  <p class="text-sm text-gray-300 font-light leading-relaxed pt-1">
+                    FormGuard is intentionally designed as a managed service, not another SaaS tool you have to babysit. We handle the technical setup and monitoring configuration for you. In most cases, we integrate using existing access you already provide to manage your site. You receive alerts, health summaries, and clear reports via email or your preferred communication channels—no extra login or dashboard required.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 4 -->
+              <div class="faq-item border border-gray-800/80 bg-gray-950/80 rounded-2xl overflow-hidden">
+                <button class="faq-question w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-900/80 cursor-pointer transition-all duration-300">
+                  <span class="text-sm sm:text-base font-medium text-white">
+                    What kinds of issues can FormGuard detect beyond simple form errors?
+                  </span>
+                  <span class="faq-icon ml-4 flex-shrink-0 text-gray-400 transition-transform duration-300">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25 12 15.75 4.5 8.25" />
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer px-5 pb-4 pt-0 hidden">
+                  <p class="text-sm text-gray-300 font-light leading-relaxed pt-1">
+                    Beyond obvious “form won’t submit” errors, FormGuard commonly detects broken SMTP configurations, changes in spam filters, plugin conflicts, JavaScript errors introduced by new tracking scripts, misconfigured reCAPTCHA, and hosting-level issues that block outbound mail. Because we follow the entire journey of a submission, we can flag problems that normal uptime monitoring or basic QA would never catch.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 5 -->
+              <div class="faq-item border border-gray-800/80 bg-gray-950/80 rounded-2xl overflow-hidden">
+                <button class="faq-question w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-900/80 cursor-pointer transition-all duration-300">
+                  <span class="text-sm sm:text-base font-medium text-white">
+                    Is FormGuard suitable for agencies managing multiple client sites?
+                  </span>
+                  <span class="faq-icon ml-4 flex-shrink-0 text-gray-400 transition-transform duration-300">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25 12 15.75 4.5 8.25" />
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer px-5 pb-4 pt-0 hidden">
+                  <p class="text-sm text-gray-300 font-light leading-relaxed pt-1">
+                    Absolutely. Many of our customers are WordPress agencies and studios that include FormGuard as part of their premium care plans. We can monitor forms across multiple sites, organize alerts by client, and provide you with clear, branded reports that show the value you’re delivering. It’s a simple way to add a high-impact, low-effort layer of protection to every site under your care.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT US -->
+      <section id="about" class="py-16 md:py-24 border-t border-gray-900/80 bg-gray-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div class="space-y-4">
+              <h2 class="font-display font-bold tracking-tight text-3xl sm:text-4xl text-white">
+                The Team Behind FormGuard
+              </h2>
+              <p class="text-sm sm:text-base text-gray-300 font-light leading-relaxed">
+                FormGuard was created by the team at WP Expert after years of watching clients lose real opportunities from broken or misconfigured WordPress forms. We’ve built, maintained, and rescued hundreds of high-traffic sites, and we kept seeing the same painful pattern: forms silently failing for days or weeks before anyone noticed. FormGuard was born as an internal tool to protect our own clients, then evolved into a dedicated service powered by modern monitoring, smart automation, and AI-assisted diagnostics.
+              </p>
+              <p class="text-sm sm:text-base text-gray-300 font-light leading-relaxed">
+                Our mission is simple: ensure that no serious business ever loses revenue because a website form quietly stopped working. We believe critical conversion paths deserve the same level of protection as uptime and security. That means opinionated best practices, proactive testing, and clear communication—not dashboards filled with noise. At our core, we value reliability, transparency, and partnership. When you work with FormGuard, you’re backed by a team that treats your forms, leads, and growth as if they were our own.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="border border-gray-800/80 bg-gray-900/80 rounded-2xl p-5 shadow-md shadow-black/60">
+                <p class="text-xs text-[#FFD166] uppercase tracking-[0.25em] mb-2">
+                  10+ Years
+                </p>
+                <p class="text-sm text-gray-300 font-light">
+                  of hands-on WordPress experience building and maintaining mission-critical marketing sites.
+                </p>
+              </div>
+              <div class="border border-gray-800/80 bg-gray-900/80 rounded-2xl p-5 shadow-md shadow-black/60">
+                <p class="text-xs text-[#FFD166] uppercase tracking-[0.25em] mb-2">
+                  Thousands
+                </p>
+                <p class="text-sm text-gray-300 font-light">
+                  of real-world form submissions tested, monitored, and protected across industries.
+                </p>
+              </div>
+              <div class="border border-gray-800/80 bg-gray-900/80 rounded-2xl p-5 shadow-md shadow-black/60">
+                <p class="text-xs text-[#FFD166] uppercase tracking-[0.25em] mb-2">
+                  Agency-Ready
+                </p>
+                <p class="text-sm text-gray-300 font-light">
+                  Designed to plug into your existing care plans and client workflows without friction.
+                </p>
+              </div>
+              <div class="border border-gray-800/80 bg-gray-900/80 rounded-2xl p-5 shadow-md shadow-black/60">
+                <p class="text-xs text-[#FFD166] uppercase tracking-[0.25em] mb-2">
+                  Human Support
+                </p>
+                <p class="text-sm text-gray-300 font-light">
+                  Real experts reviewing alerts and patterns, not just automated notifications in your inbox.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="py-16 md:py-24 border-t border-gray-900/80 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="border border-gray-800/80 bg-gradient-to-r from-gray-950 via-gray-900 to-black rounded-3xl px-6 sm:px-10 py-10 sm:py-12 lg:py-14 shadow-2xl shadow-black/70">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+              <div class="lg:col-span-2 space-y-3">
+                <p class="text-xs text-[#FFD166] uppercase tracking-[0.3em]">
+                  Stop Losing Invisible Leads
+                </p>
+                <h2 class="font-display font-bold tracking-tight text-3xl sm:text-4xl text-white">
+                  Guarding Your Forms, Securing Your Leads, Every Single Day.
+                </h2>
+                <p class="text-sm sm:text-base text-gray-300 font-light max-w-2xl leading-relaxed">
+                  Activate FormGuard and turn your forms from a hidden liability into a fully monitored, continuously tested asset. No new dashboards, no complex setup—just instant visibility and fewer costly surprises.
+                </p>
+              </div>
+              <div class="flex flex-col items-start lg:items-end gap-4">
+                <a href="https://wpexpert.ca/formguard-never-miss-another-lead/" class="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-[#FF5A5F] to-[#FFD166] px-8 py-4 text-base font-bold text-white shadow-2xl shadow-[#FF5A5F]/50 hover:shadow-xl hover:brightness-110 hover:scale-105 transition-all duration-300 ease-out">
+                  Get FormGuard for My Site
+                  <svg class="w-5 h-5 ml-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15M13.5 5.25 19.5 12l-6 6.75" />
+                  </svg>
+                </a>
+                <p class="text-xs text-gray-400 font-light">
+                  Questions before you start? Email us at <span class="text-gray-200">contact@wpexpert.ca</span>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NOTE: Contact form intentionally omitted; Web3Forms will be injected automatically. -->
+    </main>
+
+    <!-- FOOTER -->
+    
+    <!-- Contact Form Section - Centered Card Layout -->
+    <section id="contact" class="py-20 border-t border-gray-900/80 bg-black">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Get in Touch</h2>
+          <p class="text-lg max-w-2xl mx-auto text-gray-300 font-light">
+            Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+          </p>
+        </div>
+
+        <div class="rounded-2xl shadow-xl p-8 md:p-12 bg-gray-900/80 border border-gray-800/80">
+          <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+            <input type="hidden" name="access_key" value="6c78c838-5a1c-4e83-a874-a7c73dcba2f9">
+            <input type="hidden" name="redirect" value="false">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <div>
+              <label for="name" class="block text-sm font-semibold mb-2 text-gray-200">
+                Full Name <span class="text-red-500">*</span>
+              </label>
+              <input 
+                type="text" 
+                name="name" 
+                id="name" 
+                required 
+                class="w-full px-4 py-3 border border-gray-700 rounded-lg outline-none transition-all bg-gray-900 text-gray-100 placeholder-gray-500 focus:border-[#FF5A5F] focus:ring-2 focus:ring-[#FF5A5F]/40 focus:ring-offset-2 focus:ring-offset-black"
+                placeholder="John Doe"
+              >
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-semibold mb-2 text-gray-200">
+                Email Address <span class="text-red-500">*</span>
+              </label>
+              <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                required 
+                class="w-full px-4 py-3 border border-gray-700 rounded-lg outline-none transition-all bg-gray-900 text-gray-100 placeholder-gray-500 focus:border-[#FF5A5F] focus:ring-2 focus:ring-[#FF5A5F]/40 focus:ring-offset-2 focus:ring-offset-black"
+                placeholder="john@example.com"
+              >
+            </div>
+
+            <div>
+              <label for="phone" class="block text-sm font-semibold mb-2 text-gray-200">
+                Phone Number
+              </label>
+              <input 
+                type="tel" 
+                name="phone" 
+                id="phone" 
+                class="w-full px-4 py-3 border border-gray-700 rounded-lg outline-none transition-all bg-gray-900 text-gray-100 placeholder-gray-500 focus:border-[#FF5A5F] focus:ring-2 focus:ring-[#FF5A5F]/40 focus:ring-offset-2 focus:ring-offset-black"
+                placeholder="+1 (555) 000-0000"
+              >
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-semibold mb-2 text-gray-200">
+                Message <span class="text-red-500">*</span>
+              </label>
+              <textarea 
+                name="message" 
+                id="message" 
+                required 
+                rows="5" 
+                class="w-full px-4 py-3 border border-gray-700 rounded-lg outline-none resize-none transition-all bg-gray-900 text-gray-100 placeholder-gray-500 focus:border-[#FF5A5F] focus:ring-2 focus:ring-[#FF5A5F]/40 focus:ring-offset-2 focus:ring-offset-black"
+                placeholder="Tell us about your project or inquiry..."
+              ></textarea>
+            </div>
+
+            <div class="pt-4">
+              <button 
+                type="submit" 
+                class="w-full font-semibold py-4 px-8 rounded-lg transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-xl bg-gradient-to-r from-[#FF5A5F] to-[#FFD166] text-white"
+              >
+                Send Message
+              </button>
+            </div>
+
+            <div id="form-result" class="hidden mt-4 p-4 rounded-lg text-center font-medium"></div>
+          </form>
+        </div>
+
+        <div class="mt-12 text-center opacity-75">
+          <p class="text-sm text-gray-300">
+            Or email us directly at <a href="mailto:hello@example.com" class="font-semibold hover:opacity-80 transition-opacity text-[#FFD166]">hello@example.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      (function() {
+        const form = document.querySelector('form[action*="web3forms"]');
+        const resultDiv = document.getElementById('form-result');
+        
+        if (!form) return;
+        
+        form.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          
+          const formData = new FormData(form);
+          const submitButton = form.querySelector('button[type="submit"]');
+          const originalButtonText = submitButton.textContent;
+          
+          submitButton.disabled = true;
+          submitButton.textContent = 'Sending...';
+          resultDiv.classList.add('hidden');
+          
+          try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              body: formData
+            });
+            
+            const data = await response.json();
+            
+            if (response.ok && data.success) {
+              resultDiv.className = 'block mt-4 p-4 rounded-lg text-center font-medium bg-green-50 text-green-800 border border-green-200';
+              resultDiv.textContent = 'Thank you! Your message has been sent successfully. We\'ll get back to you soon.';
+              form.reset();
+            } else {
+              resultDiv.className = 'block mt-4 p-4 rounded-lg text-center font-medium bg-red-50 text-red-800 border border-red-200';
+              resultDiv.textContent = data.message || 'Something went wrong. Please try again.';
+            }
+          } catch (error) {
+            resultDiv.className = 'block mt-4 p-4 rounded-lg text-center font-medium bg-red-50 text-red-800 border border-red-200';
+            resultDiv.textContent = 'Network error. Please check your connection and try again.';
+          } finally {
+            submitButton.disabled = false;
+            submitButton.textContent = originalButtonText;
+          }
+        });
+      })();
+    </script>
+  <footer class="border-t border-gray-900/80 bg-gray-950 pt-12 pb-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8 mb-10">
+          <!-- Brand -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-2">
+              <div class="h-8 w-8 rounded-xl bg-gradient-to-tr from-[#FF5A5F] to-[#FFD166] flex items-center justify-center shadow-lg shadow-[#FF5A5F]/40">
+                <svg class="w-4 h-4 text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M12 3.75 5.25 6v6.75c0 3.364 2.316 6.382 5.625 7.125 3.309-.743 5.625-3.761 5.625-7.125V6L12 3.75z" />
+                </svg>
+              </div>
+              <span class="font-display font-semibold text-white tracking-tight">
+                FormGuard by WP Expert
+              </span>
+            </div>
+            <p class="text-xs text-gray-400 font-light max-w-xs">
+              Continuous monitoring and proactive testing for the forms that drive your business forward.
+            </p>
+          </div>
+
+          <!-- Links -->
+          <div class="space-y-3">
+            <h3 class="text-sm font-semibold text-white uppercase tracking-[0.2em]">
+              Navigation
+            </h3>
+            <div class="flex flex-col gap-2 text-sm text-gray-300">
+              <a href="#features" class="hover:text-white transition-colors duration-300">Features</a>
+              <a href="#benefits" class="hover:text-white transition-colors duration-300">Benefits</a>
+              <a href="#testimonials" class="hover:text-white transition-colors duration-300">Testimonials</a>
+              <a href="#faq" class="hover:text-white transition-colors duration-300">FAQ</a>
+              <a href="#about" class="hover:text-white transition-colors duration-300">About</a>
+            </div>
+          </div>
+
+          <!-- Legal -->
+          <div class="space-y-3">
+            <h3 class="text-sm font-semibold text-white uppercase tracking-[0.2em]">
+              Resources
+            </h3>
+            <div class="flex flex-col gap-2 text-sm text-gray-300">
+              <a href="privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a>
+              <a href="terms.html" class="hover:text-white transition-colors duration-300">Terms of Service</a>
+              <a href="blog.html" class="hover:text-white transition-colors duration-300">Blog</a>
+            </div>
+          </div>
+
+          <!-- Contact & Social -->
+          <div class="space-y-3">
+            <h3 class="text-sm font-semibold text-white uppercase tracking-[0.2em]">
+              Contact
+            </h3>
+            <p class="text-sm text-gray-300 font-light">
+              Email: <span class="text-gray-100">contact@wpexpert.ca</span>
+            </p>
+            <div class="flex items-center gap-4 text-gray-400">
+              <a href="#" class="hover:text-white transition-colors duration-300" aria-label="Twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="#" class="hover:text-white transition-colors duration-300" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="hover:text-white transition-colors duration-300" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800/80 pt-4 mt-2 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p class="text-xs text-gray-500">
+            &copy; 2025 FormGuard by WP Expert. All rights reserved.
+          </p>
+          <p class="text-[11px] text-gray-500">
+            Built for teams who refuse to lose leads to silent form failures.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <button id="back-to-top" class="fixed bottom-6 right-6 z-50 hidden items-center justify-center rounded-full bg-gradient-to-r from-[#FF5A5F] to-[#FFD166] text-gray-950 shadow-lg shadow-black/50 w-11 h-11 hover:scale-105 hover:shadow-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-950 focus:ring-[#FF5A5F]">
+    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75 12 8.25l7.5 7.5" />
+    </svg>
+  </button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Back to Top Button
+      const backToTopButton = document.getElementById('back-to-top');
+      if (backToTopButton) {
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 300) {
+            backToTopButton.classList.remove('hidden');
+            backToTopButton.classList.add('flex');
+          } else {
+            backToTopButton.classList.add('hidden');
+            backToTopButton.classList.remove('flex');
+          }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
+      // Mobile Menu Toggle
+      const mobileMenuButton = document.querySelector('.mobile-menu-button');
+      const mobileMenu = document.querySelector('.mobile-menu');
+      
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          const icon = mobileMenuButton.querySelector('i');
+          if (icon) {
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+          }
+        });
+
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            const icon = mobileMenuButton.querySelector('i');
+            if (icon) {
+              icon.classList.remove('fa-times');
+              icon.classList.add('fa-bars');
+            }
+          });
+        });
+      }
+
+      // FAQ Accordion Toggle (if FAQ section exists)
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        if (question) {
+          question.addEventListener('click', () => {
+            const answer = item.querySelector('.faq-answer');
+            const isOpen = !answer.classList.contains('hidden');
+            
+            // Close all other FAQ items
+            faqItems.forEach(otherItem => {
+              if (otherItem !== item) {
+                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+              }
+            });
+            
+            // Toggle current item
+            answer?.classList.toggle('hidden');
+            item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+          });
+        }
+      });
+
+      // Smooth Scroll for Anchor Links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href !== '#' && href.length > 1) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
