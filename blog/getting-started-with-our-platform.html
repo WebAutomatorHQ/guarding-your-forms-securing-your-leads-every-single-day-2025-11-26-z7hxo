@@ -374,84 +374,72 @@
     </main>
 
     <!-- Contact Form Section - Centered Card Layout -->
-    <section id="contact" class="py-20" style="background: linear-gradient(to bottom, var(--color-background, #ffffff), var(--color-background-alt, #f9fafb));">
+    <section id="contact" class="py-20 bg-black">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: var(--color-text, #111827);">Get in Touch</h2>
-          <p class="text-lg max-w-2xl mx-auto opacity-75">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Get in Touch</h2>
+          <p class="text-lg max-w-2xl mx-auto opacity-75 text-gray-300">
             Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
           </p>
         </div>
 
-        <div class="rounded-2xl shadow-xl p-8 md:p-12" style="background: var(--color-card-bg, #ffffff);">
+        <div class="rounded-2xl shadow-xl p-8 md:p-12 bg-gray-900 border border-gray-800">
           <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
             <input type="hidden" name="access_key" value="6c78c838-5a1c-4e83-a874-a7c73dcba2f9">
             <input type="hidden" name="redirect" value="false">
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
             <div>
-              <label for="name" class="block text-sm font-semibold mb-2" style="color: var(--color-text, #374151);">
-                Full Name <span style="color: var(--color-error, #ef4444);">*</span>
+              <label for="name" class="block text-sm font-semibold mb-2 text-gray-200">
+                Full Name <span class="text-red-500">*</span>
               </label>
               <input 
                 type="text" 
                 name="name" 
                 id="name" 
                 required 
-                class="w-full px-4 py-3 border rounded-lg outline-none transition-all"
-                style="border-color: var(--color-border, #d1d5db); background: var(--color-input-bg, #ffffff);"
-                onfocus="this.style.borderColor='var(--color-primary, #3b82f6)'; this.style.boxShadow='0 0 0 3px rgba(var(--color-primary-rgb, 59, 130, 246), 0.1)'"
-                onblur="this.style.borderColor='var(--color-border, #d1d5db)'; this.style.boxShadow='none'"
+                class="w-full px-4 py-3 border rounded-lg outline-none transition-all bg-gray-950 border-gray-700 text-gray-100 placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/40 focus:ring-offset-0" 
                 placeholder="John Doe"
               >
             </div>
 
             <div>
-              <label for="email" class="block text-sm font-semibold mb-2" style="color: var(--color-text, #374151);">
-                Email Address <span style="color: var(--color-error, #ef4444);">*</span>
+              <label for="email" class="block text-sm font-semibold mb-2 text-gray-200">
+                Email Address <span class="text-red-500">*</span>
               </label>
               <input 
                 type="email" 
                 name="email" 
                 id="email" 
                 required 
-                class="w-full px-4 py-3 border rounded-lg outline-none transition-all"
-                style="border-color: var(--color-border, #d1d5db); background: var(--color-input-bg, #ffffff);"
-                onfocus="this.style.borderColor='var(--color-primary, #3b82f6)'; this.style.boxShadow='0 0 0 3px rgba(var(--color-primary-rgb, 59, 130, 246), 0.1)'"
-                onblur="this.style.borderColor='var(--color-border, #d1d5db)'; this.style.boxShadow='none'"
+                class="w-full px-4 py-3 border rounded-lg outline-none transition-all bg-gray-950 border-gray-700 text-gray-100 placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/40 focus:ring-offset-0" 
                 placeholder="john@example.com"
               >
             </div>
 
             <div>
-              <label for="phone" class="block text-sm font-semibold mb-2" style="color: var(--color-text, #374151);">
+              <label for="phone" class="block text-sm font-semibold mb-2 text-gray-200">
                 Phone Number
               </label>
               <input 
                 type="tel" 
                 name="phone" 
                 id="phone" 
-                class="w-full px-4 py-3 border rounded-lg outline-none transition-all"
-                style="border-color: var(--color-border, #d1d5db); background: var(--color-input-bg, #ffffff);"
-                onfocus="this.style.borderColor='var(--color-primary, #3b82f6)'; this.style.boxShadow='0 0 0 3px rgba(var(--color-primary-rgb, 59, 130, 246), 0.1)'"
-                onblur="this.style.borderColor='var(--color-border, #d1d5db)'; this.style.boxShadow='none'"
+                class="w-full px-4 py-3 border rounded-lg outline-none transition-all bg-gray-950 border-gray-700 text-gray-100 placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/40 focus:ring-offset-0" 
                 placeholder="+1 (555) 000-0000"
               >
             </div>
 
             <div>
-              <label for="message" class="block text-sm font-semibold mb-2" style="color: var(--color-text, #374151);">
-                Message <span style="color: var(--color-error, #ef4444);">*</span>
+              <label for="message" class="block text-sm font-semibold mb-2 text-gray-200">
+                Message <span class="text-red-500">*</span>
               </label>
               <textarea 
                 name="message" 
                 id="message" 
                 required 
                 rows="5" 
-                class="w-full px-4 py-3 border rounded-lg outline-none resize-none transition-all"
-                style="border-color: var(--color-border, #d1d5db); background: var(--color-input-bg, #ffffff);"
-                onfocus="this.style.borderColor='var(--color-primary, #3b82f6)'; this.style.boxShadow='0 0 0 3px rgba(var(--color-primary-rgb, 59, 130, 246), 0.1)'"
-                onblur="this.style.borderColor='var(--color-border, #d1d5db)'; this.style.boxShadow='none'"
+                class="w-full px-4 py-3 border rounded-lg outline-none resize-none transition-all bg-gray-950 border-gray-700 text-gray-100 placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/40 focus:ring-offset-0" 
                 placeholder="Tell us about your project or inquiry..."
               ></textarea>
             </div>
@@ -459,8 +447,7 @@
             <div class="pt-4">
               <button 
                 type="submit" 
-                class="w-full font-semibold py-4 px-8 rounded-lg transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-xl"
-                style="background: var(--color-primary, #3b82f6); color: var(--color-button-text, #ffffff);"
+                class="w-full font-semibold py-4 px-8 rounded-lg transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-xl bg-blue-500 hover:bg-blue-400 text-white"
               >
                 Send Message
               </button>
@@ -471,8 +458,8 @@
         </div>
 
         <div class="mt-12 text-center opacity-75">
-          <p>
-            Or email us directly at <a href="mailto:hello@example.com" class="font-semibold hover:opacity-80 transition-opacity" style="color: var(--color-primary, #3b82f6);">hello@example.com</a>
+          <p class="text-gray-300">
+            Or email us directly at <a href="mailto:hello@example.com" class="font-semibold hover:opacity-80 transition-opacity text-blue-400">hello@example.com</a>
           </p>
         </div>
       </div>
